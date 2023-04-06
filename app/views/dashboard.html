@@ -3,11 +3,12 @@
 
 #{menu id:"dashboard"/}
 
-<section class="ui segment">
-
-</section>
+#{list items:playlists, as:'playlist'}
 <div class="content box">
   <h1 class="title">
-    Beethoven Sonatas</h1>
+    ${playlist.title}
+  </h1>
+  Duration: ${playlist.duration}
   #{listsongs playlist:playlist/}
 </div>
+#{/list}
