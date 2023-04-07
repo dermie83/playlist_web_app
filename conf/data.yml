@@ -15,12 +15,25 @@ Song(s4):
   artist: Beethoven
   duration: 8
 Song(s5):
-  title: Piano Concertos No. 17
+  title: Piano Concerto No. 17
   artist: Beethoven
+  duration: 4
 Song(s6):
   title: Piano Concerto No. 10
   artist: Beethoven
   duration: 12
+Song(s7):
+  title: Piano 5th Symphony
+  artist: Beethoven
+  duration: 20
+Song(s8):
+  title: Piano 9th Symphony
+  artist: Beethoven
+  duration: 40
+Song(s9):
+  title: Piano 2th Symphony
+  artist: Beethoven
+  duration: 30
 
 Playlist(p1):
   title: Beethoven Sonatas
@@ -32,8 +45,16 @@ Playlist(p1):
 
 Playlist(p2):
   title: Beethoven Concertos
-  duration: 23
+  duration: 24
   songs:
     - s4
     - s5
     - s6
+
+Playlist(p3):
+  title: Beethoven Symphonies
+  duration: 90
+  songs:
+    - s7
+    - s8
+    - s9
