@@ -17,4 +17,15 @@ public class Dashboard extends Controller
     List<Playlist> playlists = Playlist.findAll();
     render ("dashboard.html", playlists);
   }
+
+  public static void deleteplaylist (Long id)
+  {
+    Playlist playlist = Playlist.findById(id);
+    playlist.delete();
+    Logger.info ("Removing ", playlist.title);
+
+    render("dashboard.html", playlist);
+  }
+
 }
+

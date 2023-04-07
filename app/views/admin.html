@@ -18,10 +18,18 @@
     <tbody>
     #{list items:songs, as:'song'}
     <tr>
-      <th>${song.id}</th>
-      <th>${song.title}</th>
-      <th>${song.artist}</th>
-      <th>${song.duration}</th>
+      <td>
+        ${song.id}
+      </td>
+      <td>
+        ${song.title}
+      </td>
+      <td>
+        ${song.artist}
+      </td>
+      <td>
+        ${song.duration}
+      </td>
     </tr>
     #{/list}
     </tbody>

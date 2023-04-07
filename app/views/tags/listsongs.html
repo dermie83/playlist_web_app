@@ -18,6 +18,9 @@
     <td>
       ${song.duration}
     </td>
+    <td>
+      <a href="/playlists/${_playlist.id}/deletesong/${song.id}" class="button is-danger">Delete Song</a>
+    </td>
   </tr>
   #{/list}
   </tbody>
